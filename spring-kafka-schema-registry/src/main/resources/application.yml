@@ -1,0 +1,62 @@
+spring:
+  kafka:
+    bootstrap-servers:
+      - broker.local:19092
+    properties:
+      security.protocol: SSL
+      ssl.endpoint.identification.algorithm:
+      schema.registry.url: https://schema-registry.local:8081
+    ssl:
+      protocol: SSL
+      key-store-location: file://etc/kafka/secrets/kafka.broker.keystore.jks
+      key-store-password: awesomekafka
+      key-store-type: JKS
+      trust-store-location: file://etc/kafka/secrets/kafka.broker.truststore.jks
+      trust-store-password: awesomekafka
+      trust-store-type: JKS
+    consumer:
+      group-id: people
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      properties:
+        max.poll.interval.ms: 3000
+      ssl:
+        protocol: SSL
+        key-store-location: file://etc/kafka/secrets/kafka.broker.keystore.jks
+        key-store-password: awesomekafka
+        key-password: awesomekafka
+        key-store-type: JKS
+        trust-store-location: file://etc/kafka/secrets/kafka.broker.truststore.jks
+        trust-store-password: awesomekafka
+        trust-store-type: JKS
+    producer:
+      acks: all
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+      properties:
+        auto.register.schemas: false
+        value.subject.name.strategy: io.confluent.kafka.serializers.subject.TopicRecordNameStrategy
+        specific.avro.reader: true
+        linger.ms: 1
+        max.in.flight.requests.per.connection: 1
+        request.timeout.ms: 20000
+        retry.backoff.ms: 500
+        schema.registry.url: https://schema-registry.local:8081
+      ssl:
+        protocol: SSL
+        key-store-location: file://etc/kafka/secrets/kafka.broker.keystore.jks
+        key-store-password: awesomekafka
+        key-store-type: JKS
+        key-password: awesomekafka
+        trust-store-location: file://etc/kafka/secrets/kafka.broker.truststore.jks
+        trust-store-password: awesomekafka
+        trust-store-type: JKS
+      retries: 5
+
+batch.security.ssl:
+    keyStore: file://etc/kafka/secrets/kafka.schema-registry.keystore.jks
+    keyStorePassword: awesomekafka
+    trustStore: file://etc/kafka/secrets/kafka.schema-registry.truststore.jks
+    trustStorePassword: awesomekafka

@@ -1,0 +1,5 @@
+batch.security.ssl:
+  keyStore: classpath*:secrets/kafka.schema-registry.keystore.jks
+  keyStorePassword: awesomekafka
+  trustStore: classpath*:secrets/kafka.schema-registry.truststore.jks
+  trustStorePassword: awesomekafka

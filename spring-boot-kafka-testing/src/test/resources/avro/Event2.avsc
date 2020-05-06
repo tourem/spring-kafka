@@ -1,0 +1,13 @@
+{
+  "type" : "record",
+  "name" : "Event2",
+  "namespace" : "com.larbotech.kafka.event.dto",
+  "doc" : "Schema for com.larbotech.kafka.event.dto.Event2",
+  "fields" : [ {
+    "name" : "hits",
+    "type" : "int"
+  }, {
+    "name" : "timestamp",
+    "type" : "long"
+  } ]
+}

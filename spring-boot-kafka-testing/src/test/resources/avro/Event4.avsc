@@ -1,0 +1,13 @@
+{
+  "type" : "record",
+  "name" : "Event4",
+  "namespace" : "com.larbotech.kafka.event.dto",
+  "doc" : "Schema for com.larbotech.kafka.event.dto.Event4",
+  "fields" : [ {
+    "name" : "id",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "timestamp",
+    "type" : "long"
+  } ]
+}

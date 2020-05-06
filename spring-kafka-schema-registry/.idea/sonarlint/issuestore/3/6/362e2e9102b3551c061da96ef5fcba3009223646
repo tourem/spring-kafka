@@ -1,0 +1,39 @@
+
+\
+squid:S106±"9Replace this use of System.out or System.err by a logger.(È›Ğãüÿÿÿÿ8‡òû.
+V
+squid:S106L"9Replace this use of System.out or System.err by a logger.(ûúÄç8ó¬Èü.
+dsquid:S1126)"AReplace this if-then-else statement by a single return statement.(–Ç¤¡ıÿÿÿÿ8ÅòËî.
+rsquid:UselessImportCheck
+"GRemove this unused import 'org.apache.kafka.clients.producer.Callback'.(ûÀÅã8ªĞàû.
+V
+squid:S106O"9Replace this use of System.out or System.err by a logger.(ü·ñƒ8ó¬Èü.
+V
+squid:S106N"9Replace this use of System.out or System.err by a logger.(šıˆÆ8ó¬Èü.
+{
+squid:S135:"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8ó¬Èü.
+W
+squid:S106½"9Replace this use of System.out or System.err by a logger.(Å¶±¢8ªĞàû.
+fsquid:S1192n"HDefine a constant instead of duplicating this literal "datahub" 5 times.(Å€ñ8ÅòËî.
+}squid:S2293²"YReplace the type specification in this constructor call with the diamond operator ("<>").(®¼÷…üÿÿÿÿ8ªĞàû.
+isquid:S2147¼"ECombine this catch with the one at line 184, which has the same body.(²ı…¦ûÿÿÿÿ8ªĞàû.
+osquid:CommentedOutCodeLineÃ"<This block of commented-out lines of code should be removed.(æƒƒ€ùÿÿÿÿ8ŠÍáû.
+W
+squid:S106µ"9Replace this use of System.out or System.err by a logger.(ß¨§ó8ªĞàû.
+jsquid:S2095•"KUse try-with-resources or close this "KafkaProducer" in a "finally" clause.(ß¢èÁ8ïŞáû.
+[
+squid:S106M"9Replace this use of System.out or System.err by a logger.(¶Ÿº‡ùÿÿÿÿ8ó¬Èü.
+:squid:S1643P"Use a StringBuilder instead.(Û¼ÈÃ8ó¬Èü.
+xsquid:S2293•"YReplace the type specification in this constructor call with the diamond operator ("<>").(ß¢èÁ8ÅòËî.
+jsquid:S2142¼"FEither re-interrupt this method or rethrow the "InterruptedException".(²ı…¦ûÿÿÿÿ8ªĞàû.
+\
+squid:S106º"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ8ªĞàû.
+\
+squid:S106¾"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍşÿÿÿÿ8ªĞàû.
+isquid:CommentedOutCodeLiner"<This block of commented-out lines of code should be removed.(¶Œ£±8ÅòËî.
+W
+squid:S106¹"9Replace this use of System.out or System.err by a logger.(Å¶±¢8ªĞàû.
+Fsquid:S1604%"(Make this anonymous inner class a lambda(ÜÅı·8ÅòËî.
+V
+squid:S106]"9Replace this use of System.out or System.err by a logger.(Á˜û 8Æ­øû.
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(åì¤ù8ÅòËî.
